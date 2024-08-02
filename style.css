@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    width:360px;
+    background: #030303;
+    position: fixed;
+    top:0;
+    left:0;
+    margin-bottom: 50px;
+    height:relative;
+    padding:10px;
+    
+}
+.sidebar-nav{
+  background-color: #111111;
+  border-radius:10px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  position:relative;
+}
+.sidebar-nav .logo{
+    width: 120px;
+    
+}
+.sidebar-nav .logo img{
+    width:100%;
+    
+    
+}
+.sidebar-nav ul{
+    list-style-type: style none;
+}
+.sidebar-nav ul li{
+    padding: 15px 20px;
+ 
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li .home{
+    color:white;
+     
+}
+.sidebar-nav ul li a:hover{
+    color: white;
+    font-size:17px;
+
+}
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.library::after{
+    content: "+";
+    float: right;
+    text-align: center;
+    background: #1f1e1e;
+    padding: 5px;
+    border-radius:50%;
+    font-size: 15px;
+}
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+    
+    
+
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+    
+
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background:transparent;
+    width:1px;
+
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(126, 124, 124);
+    width:0px;
+    
+
+}
+.create-playlist{
+    background-color: #2b2828;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height:150px;
+    
+}
+.create-playlist h4{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.911);
+
+}
+.create-playlist p{
+    margin-top:5px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.911);
+}
+.create-playlist button{
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding:10px 20px;
+}
+
+.privacy ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.privacy ul li{
+    padding: 0 10px;
+    padding-bottom: 8px;
+    
+
+}
+
+.privacy ul li a{
+
+    text-decoration: none;
+    font-size: 12px; 
+    color: rgba(245, 245, 245, 0.587);
+    font-weight: 600;
+    margin:0 15px;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color:#e1d7d7;
+    font-size: 12px; 
+   
+    
+}
+.eng-button{
+    padding: 20px 30px;
+    
+
+
+}
+.eng-button button{
+    padding: 10px 30px;
+    color:white;
+    background: transparent;
+    outline: none;
+    border: solid grey 1px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    position:relative;
+
+  
+    
+
+
+}
+.eng-button button i{
+    margin-right: 5px;
+    background: transparent;
+    ;
+}
+.eng-button button:hover{
+    border:solid white 1px;
+    font-size: 16px;
+
+}
+
+/* .............main section css........*/
+
+.main-class{
+    background: #111111;
+    margin-left: 360px;
+    height:100vh;
+    overflow-y:auto;
+
+    
+
+}
+.main-class::-webkit-scrollbar{
+    background: transparent;
+}
+    
+.main-class .top-nav{
+    padding:20px 30px;
+    background:rgba(0, 0, 0, 0.311);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+
+}
+.main-class .top-nav  button{
+    background: transparent;
+    border:0;
+    outline:0;
+
+
+    
+}
+.main-class .top-nav .prev-btn button{
+    color:#8b8585;
+    margin-right:20px;
+    font-size: 16px;
+    background: black;
+    padding:10px 10px;
+    border-radius:100%;
+
+
+
+}
+.main-class .top-nav .prev-btn button:hover{
+    color:white;
+    cursor: pointer;
+
+}
+.top-nav .login-btn .sign-up{
+    color: #8b8585;
+    font-size: 16px;
+    font-weight:600;
+    margin-right:15px;
+}
+.top-nav .login-btn .sign-up:hover{
+    color:#ffffff;
+    
+}
+.top-nav .login-btn .login-up{
+    color: #000000;
+    font-size: 16px;
+    font-weight:600;
+    background: white;
+    padding:10px 30px;
+    border-radius:30px;
+}
+.top-nav .login-btn .login-up:hover{
+    background: rgba(255, 255, 255, 0.751);
+}
+.top-nav .login-btn{
+  position: sticky;
+}
+
+.spotify-playlist{
+    padding: 20px,40px;
+    margin-left: 10px;
+
+}
+.spotify-playlist h2{
+    color:white;
+    font-size:22px;
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-left: 10px;
+}
+.spotify-playlist .card{
+    display:flex;    
+    gap: 20px;
+    overflow:hidden;
+
+}
+.spotify-playlist .card .item{
+    width:160px;
+    flex-grow: 200;
+    min-width:140px;
+    background:#18181873;
+
+    cursor:pointer;
+    border-radius: 6px;
+    padding:15px;
+    
+   
+
+}
+.spotify-playlist .card .item:hover{
+    background:#1e1d1d;
+}
+.spotify-playlist .card .item img{
+    width:100%;
+    height:100px;
+    border-radius: 6px;
+    margin-bottom:10px;
+}
+.spotify-playlist .item h4{
+    color:white;
+}
+.spotify-playlist .item p{
+    color:rgba(255, 255, 255, 0.735);
+    font-size: 13px;
+    margin-top:10px;
+
+
+}
+.spotify-playlist .item p:hover{
+    text-decoration: underline;
+
+}
+.spotify-playlist .play-btn{
+    position: relative;
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background:rgb(57, 183, 57);
+    border-radius: 100%;
+    padding: 8px 10px;
+    right: 5px;
+    bottom:15px;
+    opacity:0;
+    transition: 0.2s ease all;
+    
+}
+.spotify-playlist .item:hover .play-btn i{
+    opacity:1;
+    transform:translateY(-10px);
+
+  
+
+}
+.footer-section{
+    padding: 20px 40px;
+
+}.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+.footer-section .footer .footer-links .footer-column{
+    margin:0  12px;
+}
+.footer-section .footer .footer-links .footer-column div{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+
+}
+.footer-section .footer .footer-links ul li{
+    list-style: none;
+    margin:6px 0;
+}
+.footer-section .footer .footer-links ul li a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.587);
+    font-size: 14px;
+    cursor:pointer;
+
+}
+.footer-section .footer .footer-links ul li a:hover{
+    text-decoration: underline;
+
+}
+.footer .social-link i{
+    color: white;
+    background: rgba(131, 128, 128, 0.276);
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+}   
+hr{
+    margin-top: 30px;
+    margin-bottom: 200px;
+    color:#1f1e1e
+}
+.preview{
+    position: sticky;
+    /* left: 0;
+    right:0;
+    bottom:0; */
+    color:white;
+    width:relative;
+    background: repeating-linear-gradient(purple,black)
+    
+}
+
+    
+
+.preview ul{
+    display: flex;
+    justify-content:space-between;
+}
+.preview ul{
+    list-style: none;
+}
+.preview ul li{
+    margin:10px;
+}
+.preview ul li p{
+    margin-bottom:10px;
+}
+
+.preview ul li button{
+    margin:10px;
+    font-size: 15px;
+    font-weight: 600;;
+    background: white;
+    color:black;
+    padding:10px 20px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+
